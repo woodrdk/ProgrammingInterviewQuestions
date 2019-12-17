@@ -35,8 +35,10 @@ public class Main {
                 numArray2[z] = z+1;
             }
         }
+        // loop to look for duplicate number within the array
         for(int y = 0; y < 99; y++){
-            System.out.println(numArray2[y] + " Y");
+            // test code to display the array contents
+            // System.out.println(numArray2[y] + " Y");
 
         }
     }
