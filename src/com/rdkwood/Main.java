@@ -189,5 +189,24 @@ public class Main {
 
     public static void arrayThree(){
         // How to find the largest and smallest number in an array?
+        int[] numArray = {5, 23,345345, 23, 65, 99};
+        int smallest = 0;
+        int largest = 0;
+        for(int i = 0; i < numArray.length; i++){
+            if(i==0){
+                smallest = numArray[i];
+                largest = numArray[i];
+            }
+            else{
+                if(numArray[i] < smallest ){
+                    smallest = numArray[i];
+                }
+                if(numArray[i] > largest){
+                     largest = numArray[i];
+                }
+            }
+        }
+        System.out.println("Smallest integer in the array is " + smallest);
+        System.out.println("Largest integer in the array is " + largest);
     }
 }
