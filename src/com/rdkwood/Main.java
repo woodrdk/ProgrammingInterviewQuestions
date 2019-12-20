@@ -14,6 +14,7 @@ public class Main {
         arrayTwo();
         arrayThree();
         arrayFour();
+        arrayFive();
         // ****************  String Programming Interview Questions ********************
         // Write code to check a String is palindrome or not?
            //     A palindrome is those String whose reverse is equal to the original.
@@ -53,7 +54,7 @@ public class Main {
 
         // How to find all pairs in an array of integers whose sum is equal to the given number?
         // How to remove duplicate elements from the array in Java?
-        //How to find the top two maximum number in an array?
+
 
 
         // ***************   LinkedList Programming Interview Questions **********************
@@ -211,5 +212,16 @@ public class Main {
         Arrays.sort(numArray);
         int secondHighest = numArray.length - 2;
         System.out.println("The second highest number in the array is " + numArray[secondHighest]);
+    }
+
+    public static void arrayFive(){
+        //How to find the top two maximum number in an array?
+        int[] numArray = {5, 23, 345345, 23, 65, 99};
+        Arrays.sort(numArray);
+        int highest = numArray.length - 1;
+        int secondHighest = numArray.length - 2;
+        System.out.println("The highest number in the array is " + numArray[highest]);
+        System.out.println("The second highest number in the array is " + numArray[secondHighest]);
+
     }
 }
