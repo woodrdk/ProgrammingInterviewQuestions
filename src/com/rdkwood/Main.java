@@ -1,5 +1,7 @@
 package com.rdkwood;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Main {
         arrayOne();
         arrayTwo();
         arrayThree();
+        arrayFour();
         // ****************  String Programming Interview Questions ********************
         // Write code to check a String is palindrome or not?
            //     A palindrome is those String whose reverse is equal to the original.
@@ -48,10 +51,8 @@ public class Main {
         // the Hashtable and for every element of the first array, check whether it’s present in the hash or not,
         // O/P all those elements from the first array that are not present in the hash table
 
-        // How do you find the second highest number in an integer array?
         // How to find all pairs in an array of integers whose sum is equal to the given number?
         // How to remove duplicate elements from the array in Java?
-        // How to find the largest and smallest number in an array?
         //How to find the top two maximum number in an array?
 
 
@@ -65,12 +66,9 @@ public class Main {
         // other incrementing two-step a time, so when the first pointer reaches end of linked second pointer will
         // point to the middle element.
 
-
-
         // How do you find the 3rd element from last in a single pass? (solution)
            // This programming question is similar to above and can be solved by using 2 pointers, start the second
-        // pointer when the first pointer reaches third place.
-
+           // pointer when the first pointer reaches third place.
 
         // How do you find if there is any loop in a singly linked list? How do you find the start of the loop?
           //      This programming question can also be solved using 2 pointers and if you increase one pointer one
@@ -92,8 +90,6 @@ public class Main {
         // How are all leaves of a binary search tree printed?
         // How do you count a number of leaf nodes in a given binary tree?
         // How do you perform a binary search in a given array?
-
-
 
         // ******************************** Programming Questions on Searching and Sorting *************************
 
@@ -208,5 +204,12 @@ public class Main {
         }
         System.out.println("Smallest integer in the array is " + smallest);
         System.out.println("Largest integer in the array is " + largest);
+    }
+    public static void arrayFour(){
+        // How do you find the second highest number in an integer array?
+        int[] numArray = {5, 23, 345345, 23, 65, 99};
+        Arrays.sort(numArray);
+        int secondHighest = numArray.length - 2;
+        System.out.println("The second highest number in the array is " + numArray[secondHighest]);
     }
 }
