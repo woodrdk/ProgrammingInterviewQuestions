@@ -21,23 +21,6 @@ public class Main {
 
 
 
-// ********************* Programming questions on Array *****************************
-// In an array 1-100 exactly one number is duplicate how do you find it?
-// In an array 1-100 multiple numbers are duplicates, how do you find it?
-//        One trick in this programming questions is by using HashMap or Hashtable, we can store a
-//        number as key and its occurrence as value if the number is already present in Hashtable then
-//        increment its value or insert value as 1 and later on print all those numbers whose values are
-//        more than one.
-
-
-// Given two arrays, 1,2,3,4,5 and 2,3,1,0,5 find which number is not present in the second array.
-// Here is a quick tip to solve this programming question: put the elements of the second array in
-// the Hashtable and for every element of the first array, check whether it’s present in the hash or not,
-// O/P all those elements from the first array that are not present in the hash table
-
-// How to find all pairs in an array of integers whose sum is equal to the given number?
-// How to remove duplicate elements from the array in Java?
-
 
 
 // ***************   LinkedList Programming Interview Questions **********************
@@ -117,13 +100,3 @@ public class Main {
 // How to add two integers without using arithmetic operator? (solution)
 
 
-//  ***************** General Programming Interview Questions ***********************************
-
-// Write a program to find out if two rectangles R1 and R2 are overlapping?
-// You need to write a function to climb n steps you can climb either 1 step at a time or 2 steps a time,
-//  write a function to return a number of ways to climb a ladder with n step.
-// Write code for Generate Random No in a range from min to max?
-// Write a program for word-wrap which should work on any screen size?
-// Design an algorithm to find the frequency of occurrence of a word in an article?
-// Write a program to implement a blocking queue in Java?
-//  Write a program for the producer-consumer problem?
