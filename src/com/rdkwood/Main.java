@@ -9,136 +9,17 @@ public class Main {
         // System.out.println("hello world");
 
         // Array Questions
-        arrayOne();
-        arrayTwo();
-        arrayThree();
-        arrayFour();
-        arrayFive();
-
-
-    }
-    public static void arrayOne(){
-        // Questions Being -- In an array 1-100 numbers are stored, one number is missing how do you find it?
-        // Makes a test array
-        int[] numArray = new int[100];
-        for(int i = 1; i <= 100; i++){
-            if(i != 47){
-                numArray[i-1] = i;
-            }
-        }
-
-        // Run a loop of numbers 1-100
-        for(int j = 1; j <= 100; j++){
-            // Checks if the array is missing a number and tells user what it is
-            if(numArray[j-1] != j){
-                System.out.println("Missing number in an array of 1-100 is " + j);
-            }
-        }
-    }
-    public static void arrayTwo(){
-        // Question Being --In an array 1-100 exactly one number is duplicate how do you find it?
-        // Makes new test array
-        int[] numArray2 = new int[100];
-        for(int z = 0; z < 100; z++){
-            if(z == 47){
-                numArray2[z] = z;
-            }
-            else{
-                numArray2[z] = z+1;
-            }
-        }
-        // loop to look for duplicate number within the array
-        for(int y = 0; y < 99; y++){
-            // test code to display the array contents
-            // System.out.println(numArray2[y] + " Y");
-
-        }
-    }
-
-    public static void arrayThree(){
-        // How to find the largest and smallest number in an array?
-        int[] numArray = {5, 23,345345, 23, 65, 99};
-        int smallest = 0;
-        int largest = 0;
-        for(int i = 0; i < numArray.length; i++){
-            if(i==0){
-                smallest = numArray[i];
-                largest = numArray[i];
-            }
-            else{
-                if(numArray[i] < smallest ){
-                    smallest = numArray[i];
-                }
-                if(numArray[i] > largest){
-                     largest = numArray[i];
-                }
-            }
-        }
-        System.out.println("Smallest integer in the array is " + smallest);
-        System.out.println("Largest integer in the array is " + largest);
-    }
-    public static void arrayFour(){
-        // How do you find the second highest number in an integer array?
-        int[] numArray = {5, 23, 345345, 23, 65, 99};
-        Arrays.sort(numArray);
-        int secondHighest = numArray.length - 2;
-        System.out.println("The second highest number in the array is " + numArray[secondHighest]);
-    }
-
-    public static void arrayFive(){
-        //How to find the top two maximum number in an array?
-        int[] numArray = {5, 23, 345345, 23, 65, 99};
-        Arrays.sort(numArray);
-        int highest = numArray.length - 1;
-        int secondHighest = numArray.length - 2;
-        System.out.println("The highest number in the array is " + numArray[highest]);
-        System.out.println("The second highest number in the array is " + numArray[secondHighest]);
-
+        ArrayQuestions.arrayOne();
+        ArrayQuestions.arrayTwo();
+        ArrayQuestions.arrayThree();
+        ArrayQuestions.arrayFour();
+        ArrayQuestions.arrayFive();
     }
 }
 
 
 
 
-// ****************  String Programming Interview Questions ********************
-// Write code to check a String is palindrome or not?
-//     A palindrome is those String whose reverse is equal to the original.
-//     This can be done by using either StringBuffer reverse() method or by technique
-//     demonstrated in the solution here.
-
-// Write a method which will remove any given character from a String?
-//\ hint: you can remove a given character from String by converting it into a character array and then
-// using substring() method for removing them from output string.
-
-// Print all permutation of String both iterative and Recursive way?
-// Write a function to find out longest palindrome in a given string?
-// How to find the first non repeated character of a given String?
-// How to count the occurrence of a given character in a String?
-// How to check if two String are Anagram?
-// How to convert numeric String to int in Java?
-// What is the difference between String, StringBuilder, and StringBuffer in Java?
-// Why String is final in Java?
-// How to Split String in Java?
-// Why Char array is preferred over String for storing password?
-
-
-
-// ********************* Programming questions on Array *****************************
-// In an array 1-100 exactly one number is duplicate how do you find it?
-// In an array 1-100 multiple numbers are duplicates, how do you find it?
-//        One trick in this programming questions is by using HashMap or Hashtable, we can store a
-//        number as key and its occurrence as value if the number is already present in Hashtable then
-//        increment its value or insert value as 1 and later on print all those numbers whose values are
-//        more than one.
-
-
-// Given two arrays, 1,2,3,4,5 and 2,3,1,0,5 find which number is not present in the second array.
-// Here is a quick tip to solve this programming question: put the elements of the second array in
-// the Hashtable and for every element of the first array, check whether it’s present in the hash or not,
-// O/P all those elements from the first array that are not present in the hash table
-
-// How to find all pairs in an array of integers whose sum is equal to the given number?
-// How to remove duplicate elements from the array in Java?
 
 
 
@@ -187,45 +68,5 @@ public class Main {
 // Write code to implement Insertion Sort in Java?
 // Write code to implement Bubble Sort in Java?
 
-// ******************* Programming Questions on Numbers ***************************************
-
-// Write code to check whether a no is a power of two or not?
-// Write a program to check whether a number is a palindrome or not?
-// Check out this post which shows how to reverse a number in Java and can be used to find if its palindrome
-// or not.
-
-// Write code to check whether an integer is Armstrong number or not?
-// Here is a Java program to find Armstrong number, you can use the same logic to write code in any other
-// programming language like C and C++.
-
-// Write a program to find all prime number up to a given number?
-// Here is another Java program to find prime numbers and print them.
-// By using logic demonstrated in this program; you can write a similar program in C and C++.
-
-// Write a function to compute Nth Fibonacci number? Both iterative and recursive?
-// You can check this Java program to print Fibonacci Series using recursion and iteration.
-
-// How to check if a number is binary?
-//  For this question, you need to write a function which will accept an integer and return true if it
-//  contains only 0 and 1 e.g. if the input is 123 then your function will return false,
-//  for 101 it should return true.
-
-// How to reverse an integer in Java?
-// How to count a number of set bits in given integer?
-// How to find the sum of digits of a number using recursion?
-// How to swap two numbers without using temp variable?
-// How to find the largest of three integers in Java?
-// Write a program to find prime factors of an integer?
-// How to add two integers without using arithmetic operator? (solution)
 
 
-//  ***************** General Programming Interview Questions ***********************************
-
-// Write a program to find out if two rectangles R1 and R2 are overlapping?
-// You need to write a function to climb n steps you can climb either 1 step at a time or 2 steps a time,
-//  write a function to return a number of ways to climb a ladder with n step.
-// Write code for Generate Random No in a range from min to max?
-// Write a program for word-wrap which should work on any screen size?
-// Design an algorithm to find the frequency of occurrence of a word in an article?
-// Write a program to implement a blocking queue in Java?
-//  Write a program for the producer-consumer problem?
