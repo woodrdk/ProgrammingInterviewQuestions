@@ -14,13 +14,18 @@ public class Main {
         ArrayQuestions.arrayThree();
         ArrayQuestions.arrayFour();
         ArrayQuestions.arrayFive();
+
+        // General Questions
+
+        // Number Questions
+
+        // String Questions
+
+        // LinkedList Questions
+
+        // Search Sort Questions
     }
 }
-
-
-
-
-
 
 
 // ***************   LinkedList Programming Interview Questions **********************

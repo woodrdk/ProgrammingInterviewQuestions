@@ -34,10 +34,14 @@ public class ArrayQuestions {
             }
         }
         // loop to look for duplicate number within the array
-        for(int y = 0; y < 99; y++){
+        for(int y = 0; y < numArray2.length; y++) {
             // test code to display the array contents
             // System.out.println(numArray2[y] + " Y");
-
+            for (int j = y + 1; j < numArray2.length; j++) {
+                if (numArray2[y] == numArray2[j]) {
+                    System.out.println("The number " + y + " is duplicate");
+                }
+            }
         }
     }
 
