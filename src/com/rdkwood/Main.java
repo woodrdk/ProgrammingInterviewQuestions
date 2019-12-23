@@ -9,12 +9,12 @@ public class Main {
         // System.out.println("hello world");
 
         // Array Questions
-        ArrayQuestions.arrayOne();
-        ArrayQuestions.arrayTwo();
-        ArrayQuestions.arrayThree();
-        ArrayQuestions.arrayFour();
-        ArrayQuestions.arrayFive();
-
+//        ArrayQuestions.arrayOne();
+//        ArrayQuestions.arrayTwo();
+//        ArrayQuestions.arrayThree();
+//        ArrayQuestions.arrayFour();
+//        ArrayQuestions.arrayFive();
+        ArrayQuestions.arraySix();
         // General Questions
 
         // Number Questions

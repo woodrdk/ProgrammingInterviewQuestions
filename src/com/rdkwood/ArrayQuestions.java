@@ -85,11 +85,17 @@ public class ArrayQuestions {
         System.out.println("The second highest number in the array is " + numArray[secondHighest]);
 
     }
+
+    public static void arraySix(){
+        // Given two arrays, 1,2,3,4,5 and 2,3,1,0,5 find which number is not present in the second array.
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {2, 3, 1, 0, 5};
+
+    }
 }
 
 
 // ********************* Programming questions on Array *****************************
-// In an array 1-100 exactly one number is duplicate how do you find it?
 // In an array 1-100 multiple numbers are duplicates, how do you find it?
 //        One trick in this programming questions is by using HashMap or Hashtable, we can store a
 //        number as key and its occurrence as value if the number is already present in Hashtable then
